@@ -12,7 +12,6 @@ def load_data(filename, file_path=file_path):
 
 
 ball = pd.read_csv("finalBowler.csv")
-print(ball)
 
 def prediction(ball, name):
     score = 0
@@ -22,26 +21,30 @@ def prediction(ball, name):
     score /= 15
     return score
 
-predictedBowler = []
-predictedBowler.append(prediction(ball, "Bumrah"))
-predictedBowler.append(prediction(ball, "Shami"))
-predictedBowler.append(prediction(ball, "Kuldeep"))
-predictedBowler.append(prediction(ball, "Starc"))
-predictedBowler.append(prediction(ball, "Santner"))
-predictedBowler.append(prediction(ball, "Mohit"))
-predictedBowler.append(prediction(ball, "Cummins"))
-predictedBowler.append(prediction(ball, "Rabada"))
-predictedBowler.append(prediction(ball, "Nortje"))
-predictedBowler.append(prediction(ball, "Vivek"))
-predictedBowler.append(prediction(ball, "Chahal"))
-predictedBowler.append(prediction(ball, "Archer"))
-predictedBowler.append(prediction(ball, "Ashwin"))
-predictedBowler.append(prediction(ball, "Siraj"))
-predictedBowler.append(prediction(ball, "Arshdeep"))
-predictedBowler.append(prediction(ball, "Saini"))
+def predictedBall():
 
-player_namePred = ['Bumrah','Shami','Kuldeep','Starc','Santner','Mohit','Cummins','Rabada','Nortje','Vivek','Chahal','Archer','Ashwin','Siraj','Arshdeep','Saini']
-dicPredBow = {'Player': player_namePred, 'Match 6': predictedBowler}
+    predictedBowler = []
+    predictedBowler.append(prediction(ball, "Bumrah"))
+    predictedBowler.append(prediction(ball, "Shami"))
+    predictedBowler.append(prediction(ball, "Kuldeep"))
+    predictedBowler.append(prediction(ball, "Starc"))
+    predictedBowler.append(prediction(ball, "Santner"))
+    predictedBowler.append(prediction(ball, "Mohit"))
+    predictedBowler.append(prediction(ball, "Cummins"))
+    predictedBowler.append(prediction(ball, "Rabada"))
+    predictedBowler.append(prediction(ball, "Nortje"))
+    predictedBowler.append(prediction(ball, "Vivek"))
+    predictedBowler.append(prediction(ball, "Chahal"))
+    predictedBowler.append(prediction(ball, "Archer"))
+    predictedBowler.append(prediction(ball, "Ashwin"))
+    predictedBowler.append(prediction(ball, "Siraj"))
+    predictedBowler.append(prediction(ball, "Arshdeep"))
+    predictedBowler.append(prediction(ball, "Saini"))
 
-df_predBow = pd.DataFrame(dicPredBow)
-print(df_predBow)
+    player_namePred = ['Bumrah','Shami','Kuldeep','Starc','Santner','Mohit','Cummins','Rabada','Nortje','Vivek','Chahal','Archer','Ashwin','Siraj','Arshdeep','Saini']
+    dicPredBow = {'Player': player_namePred, 'Match 6': predictedBowler}
+
+    df_predBow = pd.DataFrame(dicPredBow)
+    return df_predBow
+
+predictedBall()
