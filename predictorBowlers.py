@@ -12,7 +12,6 @@ def load_data(filename, file_path=file_path):
 
 
 ball = pd.read_csv("finalBowler.csv")
-print(ball)
 
 def prediction(ball, name):
     score = 0
