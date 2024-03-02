@@ -12,7 +12,6 @@ def load_data(filename, file_path=file_path):
 
 
 bat = pd.read_csv("finalBatsman.csv")
-print(bat)
 
 def prediction(bat, name):
     score = 0
