@@ -21,26 +21,30 @@ def prediction(bat, name):
     score /= 15
     return score
 
-predictedBatsman = []
-predictedBatsman.append(prediction(bat, "David Warner"))
-predictedBatsman.append(prediction(bat, "Shubhman Gill"))
-predictedBatsman.append(prediction(bat, "Mitch Marsh"))
-predictedBatsman.append(prediction(bat, "Virat Kohli"))
-predictedBatsman.append(prediction(bat, "Joe Root"))
-predictedBatsman.append(prediction(bat, "MS Dhoni"))
-predictedBatsman.append(prediction(bat, "Rohit Sharma"))
-predictedBatsman.append(prediction(bat, "Steve Smith"))
-predictedBatsman.append(prediction(bat, "Pritesh"))
-predictedBatsman.append(prediction(bat, "Abhinav"))
-predictedBatsman.append(prediction(bat, "Ayan"))
-predictedBatsman.append(prediction(bat, "Wasil"))
-predictedBatsman.append(prediction(bat, "Chris Gayle"))
-predictedBatsman.append(prediction(bat, "Kane Williamson"))
-predictedBatsman.append(prediction(bat, "Ben Stokes"))
-predictedBatsman.append(prediction(bat, "Ishan Kishan"))
+def predictedBat():
+    
+    predictedBatsman = []
+    predictedBatsman.append(prediction(bat, "David Warner"))
+    predictedBatsman.append(prediction(bat, "Shubhman Gill"))
+    predictedBatsman.append(prediction(bat, "Mitch Marsh"))
+    predictedBatsman.append(prediction(bat, "Virat Kohli"))
+    predictedBatsman.append(prediction(bat, "Joe Root"))
+    predictedBatsman.append(prediction(bat, "MS Dhoni"))
+    predictedBatsman.append(prediction(bat, "Rohit Sharma"))
+    predictedBatsman.append(prediction(bat, "Steve Smith"))
+    predictedBatsman.append(prediction(bat, "Pritesh"))
+    predictedBatsman.append(prediction(bat, "Abhinav"))
+    predictedBatsman.append(prediction(bat, "Ayan"))
+    predictedBatsman.append(prediction(bat, "Wasil"))
+    predictedBatsman.append(prediction(bat, "Chris Gayle"))
+    predictedBatsman.append(prediction(bat, "Kane Williamson"))
+    predictedBatsman.append(prediction(bat, "Ben Stokes"))
+    predictedBatsman.append(prediction(bat, "Ishan Kishan"))
 
-player_namePred = ['David Warner','Shubhman Gill','Mitch Marsh','Virat Kohli','Joe Root','MS Dhoni','Rohit Sharma','Steve Smith','Pritesh','Abhinav','Ayan','Wasil','Chris Gayle','Kane Williamson','Ben Stokes','Ishan Kishan']
-dicPred = {'Player': player_namePred, 'Match 6': predictedBatsman}
+    player_namePred = ['David Warner','Shubhman Gill','Mitch Marsh','Virat Kohli','Joe Root','MS Dhoni','Rohit Sharma','Steve Smith','Pritesh','Abhinav','Ayan','Wasil','Chris Gayle','Kane Williamson','Ben Stokes','Ishan Kishan']
+    dicPred = {'Player': player_namePred, 'Match 6': predictedBatsman}
 
-df_pred = pd.DataFrame(dicPred)
-print(df_pred)
+    df_pred = pd.DataFrame(dicPred)
+    return df_pred
+
+predictedBat()
