@@ -43,8 +43,8 @@ def predictedBall():
 
     player_namePred = ['Bumrah','Shami','Kuldeep','Starc','Santner','Mohit','Cummins','Rabada','Nortje','Vivek','Chahal','Archer','Ashwin','Siraj','Arshdeep','Saini']
     dicPredBow = {'Player': player_namePred, 'Match 6': predictedBowler}
-
     df_predBow = pd.DataFrame(dicPredBow)
+    
     df_pred.sort_values(by=["Match 6"], ascending=[False], inplace=True)
     return df_pred.head(5)
 
