@@ -44,7 +44,8 @@ def predictedBat():
     player_namePred = ['David Warner','Shubhman Gill','Mitch Marsh','Virat Kohli','Joe Root','MS Dhoni','Rohit Sharma','Steve Smith','Pritesh','Abhinav','Ayan','Wasil','Chris Gayle','Kane Williamson','Ben Stokes','Ishan Kishan']
     dicPred = {'Player': player_namePred, 'Match 6': predictedBatsman}
 
-    df_pred = pd.DataFrame(dicPred)
-    return df_pred
+    df_pred.sort_values(by=["Match 6"], ascending=[False], inplace=True)
+    return df_pred.head(5)
+
 
 predictedBat()
