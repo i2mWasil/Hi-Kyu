@@ -45,6 +45,7 @@ def predictedBall():
     dicPredBow = {'Player': player_namePred, 'Match 6': predictedBowler}
 
     df_predBow = pd.DataFrame(dicPredBow)
-    return df_predBow
+    df_pred.sort_values(by=["Match 6"], ascending=[False], inplace=True)
+    return df_pred.head(5)
 
 predictedBall()
