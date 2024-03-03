@@ -96,7 +96,7 @@ def totalPointsAllRounder(run, ball, strike, wkt, over, econ, contri):
     score = teamContributionAllRounder(score, contri)
     return score
 
-all_rounder=load_data("C:/Users/prite/Downloads/allRounders.csv")
+all_rounder=load_data("allRounders.csv")
 
 row_indices1= [0,5,10,15,20,25,30,35,40,45,50,55]
 
