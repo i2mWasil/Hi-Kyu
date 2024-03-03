@@ -164,7 +164,7 @@ dic={'Player':player_name,'Match1':all_rounder_scores1,'Match2':all_rounder_scor
 df=pd.DataFrame(dic)
 d=df.T
 
-d.to_csv("C:/Users/prite/Downloads/finalAllRounder - Sheet1.csv")
+d.to_csv("allRounders.csv")
     
 
 
