@@ -222,7 +222,7 @@ def totalPointsAllRounder(run, ball, strike, wkt, over, econ, contri):
     return score
 
 
-batting=load_data("allRounders.csv")
+batting=load_data("batsmen.csv")
 print(batting)
 
 
