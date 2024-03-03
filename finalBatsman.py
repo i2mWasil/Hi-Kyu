@@ -290,7 +290,7 @@ dic={'Player':player_name,'Match1':batting_scores1,'Match2':batting_scores2,'Mat
 df=pd.DataFrame(dic)
 d=df.T
 
-d.to_csv("C:/Users/prite/Downloads/Untitled spreadsheet - Sheet1.csv")
+d.to_csv("batsmen.csv")
 
 
 
