@@ -1,6 +1,6 @@
-from predictorAllRounder import *
-from predictorBatsman import *
-from predictorBowlers import *
+from topAllRounder import *
+from topBatsman import *
+from topBowlers import *
 
 
 predictedBat()
