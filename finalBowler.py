@@ -83,7 +83,7 @@ def totalPointsBowler(wkt, over, econ, avg, contri):
     return score
 
 
-bowling=load_data("C:/Users/prite/Downloads/bowlers (2).csv")
+bowling=load_data("bowlers.csv")
 print(bowling)
 
 row_indices1= [0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75]
