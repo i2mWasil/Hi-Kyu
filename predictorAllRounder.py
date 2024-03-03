@@ -40,9 +40,10 @@ def predictedAllRound():
 
     player_namePred = ['Shakib','Rashid','Maxwell','Jadeja','Jansen','Rachin','Hasranga','Pandya','Holder','Zampa','Head','Green']
     dicPredAll = {'Player': player_namePred, 'Match 6': predictedAllRounder}
-
+    
     df_predAll = pd.DataFrame(dicPredAll)
-    return df_predAll
+    df_predAll.sort_values(by=["Match 6"], ascending=[False], inplace=True)
+    return df_predAll.head(5)
 
 
 predictedAllRound()
