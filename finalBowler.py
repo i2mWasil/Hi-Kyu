@@ -149,4 +149,4 @@ player_name = ['Bumrah','Shami','Kuldeep','Starc','Santner','Mohit','Cummins','R
 dic={'Player':player_name,'Match1':bowling_scores1,'Match2':bowling_scores2,'Match3':bowling_scores3,'Match4':bowling_scores4,'Match5':bowling_scores5}
 df=pd.DataFrame(dic)
 d=df.T
-d.to_csv("C:/Users/prite/Downloads/finalBowler - Sheet1.csv")
+d.to_csv("bowlers.csv")
