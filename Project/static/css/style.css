@@ -1,0 +1,246 @@
+
+.what-r-u-btns {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.what-r-u-btns a {
+    white-space: nowrap;
+    background-color:rgb(220, 16, 132);
+    border: none;
+    color: #000000;
+    font-size: 1.2rem;
+    margin: 1rem;
+    padding: 1rem;
+    width: 170px; 
+    height: 40px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: italic;
+    transition: background-color 0.3s ease;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.what-r-u-btns a:hover {
+    background-color: rgb(151, 12, 91);
+    transform: scale(125%);
+    transition: all 0.3s ease;
+}
+
+.what-r-u-btns a .i {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    transition: transform 0.3s ease;
+}
+
+.what-r-u-btns a.batting-icon .i {
+    background-image: url('../img/batting-icon.png');
+}
+
+.what-r-u-btns a.bowling-icon .i {
+    background-image: url('../img/bowling-icon.png');
+}
+
+.what-r-u-btns a.allround-icon .i {
+    background-image: url('../img/allround-icon.png');
+}
+
+
+.what-r-u-btns a:hover .i {
+    transform: translateX(300%) translateY(0%);
+}
+
+.what-r-u-btns .text {
+    position: absolute;
+    bottom: 30px;
+    left: 55px;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.what-r-u-btns a:hover .text {
+    transform: translateY(0);
+}
+
+.what-r-u-btns span {
+    display: flex;
+    height: 0px;
+    background-color: #ccc;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.statsbtn {
+    position: absolute;
+    left: 25.5%;
+    bottom: 35%;
+    font-size:150%;
+}
+
+.statsbtn h2 {
+    border-style: dashed;
+    border-radius: 15px;
+    text-align: center;
+    height: 65%;
+    line-height: 230%;
+    width: 28%;
+    background-color: orangered;
+    font-size: 125%;
+    position: absolute;
+    left: -35%;
+    bottom: -6%;
+}
+
+.what-r-u-btns .batting-icon {
+    border-style: dashed;
+    border-radius: 15px;
+}
+
+.what-r-u-btns .bowling-icon {
+    border-style: dashed;
+    border-radius: 15px;
+}
+
+.what-r-u-btns .allround-icon {
+    border-style: dashed;
+    border-radius: 15px;
+}
+
+.statsbtn .what-r-u-btns {
+    position: relative;
+    left: -20%;
+}
+.statsbtn .what-r-u-btns{
+    opacity: 0;
+    transition: all 0.5s ease;
+    transform: translateX(-25%);
+}
+.statsbtn:hover .what-r-u-btns {
+    opacity: 1;
+    transition: all 0.6s ease;
+    transform: translateX(25%);
+
+}
+
+.topbtn {
+    position: absolute;
+    left: 25.5%;
+    bottom: 10%;
+    font-size:150%;
+}
+
+.topbtn h2 {
+    border-style: dashed;
+    border-radius: 15px;
+    text-align: center;
+    height: 65%;
+    line-height: 230%;
+    width: 28%;
+    background-color:orangered;
+    font-size: 125%;
+    position: absolute;
+    left: -35%;
+    bottom: -6%;
+}
+
+.topbtn .what-r-u-btns {
+    position: relative;
+    left: -20%;
+}
+.topbtn .what-r-u-btns{
+    opacity: 0;
+    transition: all 0.5s ease;
+    transform: translateX(-25%);
+}
+.topbtn:hover .what-r-u-btns {
+    opacity: 1;
+    transition: all 0.5s ease;
+    transform: translateX(25%);
+
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header h1 {
+    font-size: 350%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(174, 3, 157);
+}
+.header img {
+    position: absolute;
+    left: 34%;
+    top: 2%;
+    height: 12%;
+    width: 08%;
+    margin-right: 10px;
+}
+
+/*------------------------------*/
+
+
+.body {
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%;
+    background-position-y:0%;
+    background-position-x:111%;
+}
+
+pre {
+    position: relative;
+    left: 50%;
+    font-size: 250%;
+    border-style: solid;
+    border-color: #000000;
+    border-radius: 15px;
+    color: aliceblue;
+    background-color: #000000;
+    opacity: 70%;
+}
+
+.allroundstats {
+    width: 430px;
+}
+
+.allroundtop {
+    width: 390px;
+}
+
+.battingstats {
+    width: 550px;
+}
+
+.battingtop {
+    width: 520px;
+}
+
+.bowlingstats {
+    width: 430px;
+}
+
+.bowlingtop {
+    width: 430px;
+}
