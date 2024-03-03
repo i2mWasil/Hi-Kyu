@@ -222,7 +222,7 @@ def totalPointsAllRounder(run, ball, strike, wkt, over, econ, contri):
     return score
 
 
-batting=load_data("C:/Users/prite/Downloads/Batsman - Sheet1 (6).csv")
+batting=load_data("allRounders.csv")
 print(batting)
 
 
